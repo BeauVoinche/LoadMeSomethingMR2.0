@@ -1,0 +1,254 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #F6F6F6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
+  background-color: #f8f8f8;
+}
+
+.main__heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-align: center;
+  font-family: 'Roboto';
+}
+
+.main__text {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.main__button {
+  background-color: #003688;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 16px 32px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.row1{
+margin-bottom: 30px;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__button:hover {
+  background-color:#39619F;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #F6F6F6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky
+}
+
+.top-nav__brand {
+  font-size: 1.5rem;
+}
+
+.top-nav__brand img {
+  height: 72px;
+}
+
+.top-nav__menu {
+  display: flex;
+  list-style: none;
+}
+
+.top-nav__item+.top-nav__item {
+  margin-left: 24px;
+}
+
+.top-nav__link {
+  font-size: 1.25rem;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.top-nav__link:hover {
+  color: #333;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-member {
+  width: calc(50% - 60px);
+  margin: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.team-member__image {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.team-member__name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+.team-member__title {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.team-member__bio {
+  font-size: 16px;
+  margin: 0 20px 20px;
+  text-align: center;
+}
+
+.call-button {
+  display: inline-block;
+  background-color: #003688;
+  color: white !important;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.call-button:hover {
+  background-color: #39619F;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.call-button:active {
+  transform: translateY(0px);
+  box-shadow: none;
+}
+
+.pricing-container {
+  display: flex;
+  
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+
+.pricing-card {
+  border-radius: 4px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 32px;
+  max-width: 300px;
+  width: 100%;
+  background-color: #fff;
+  color: #555;
+  text-align: center;
+}
+
+.pricing-card h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #B80000;
+}
+
+.pricing-card h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #B80000;
+}
+
+.pricing-card p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: .5px;
+}
+
+
+
+
+.footer {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: black;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer__text {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__info p {
+  margin: 0;
+}
+
+.footer__info a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer__info a:hover {
+  text-decoration: underline;
+}
